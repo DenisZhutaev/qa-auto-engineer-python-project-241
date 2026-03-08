@@ -36,5 +36,5 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=DenisZhutaev_qa-auto-engineer-python-project-241
-            -Dsonar.organization=DenisZhutaev
+            -Dsonar.organization=deniszhutaev
             -Dsonar.python.coverage.reportPaths=coverage.xml
