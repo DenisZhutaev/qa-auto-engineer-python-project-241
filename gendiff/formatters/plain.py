@@ -1,6 +1,16 @@
 # gendiff.formatters.plain module
 
 
+def _format_value(value):
+    if value is True:
+        return 'true'
+    if value is False:
+        return 'false'
+    if value is None:
+        return 'null'
+    return str(value)
+
+
 def format_plain(diff_tree, parent_key=''):
     lines = []
 
@@ -15,12 +25,12 @@ def format_plain(diff_tree, parent_key=''):
             elif status == 'added':
                 lines.append(
                     f"Property '{full_key}' was added "
-                    f"with value: {value.get('value')}"
+                    f"with value: {_format_value(value.get('value'))}"
                 )
             elif status == 'changed':
                 lines.append(
                     f"Property '{full_key}' was updated. "
-                    f"From {value.get('old_value')} to {value.get('new_value')}"
+                    f"From {_format_value(value.get('old_value'))} to {_format_value(value.get('new_value'))}"
                 )
             elif status == 'unchanged':
                 pass  # Skip unchanged properties in plain format
