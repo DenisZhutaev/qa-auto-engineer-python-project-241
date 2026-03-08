@@ -1,24 +1,24 @@
-### Hexlet tests and linter status:
+### Статус тестов и линтера Hexlet
 
 [![Actions Status](https://github.com/DenisZhutaev/qa-auto-engineer-python-project-241/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DenisZhutaev/qa-auto-engineer-python-project-241/actions)
 
-### Python CI
+### Сборка Python CI
 
 [![Python CI](https://github.com/DenisZhutaev/qa-auto-engineer-python-project-241/actions/workflows/python-ci.yml/badge.svg)](https://github.com/DenisZhutaev/qa-auto-engineer-python-project-241/actions)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_python-package&metric=alert_status)](https://sonarcloud.io/dashboard?id=hexlet-boilerplates_python-package)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_python-package&metric=coverage)](https://sonarcloud.io/dashboard?id=hexlet-boilerplates_python-package)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=DenisZhutaev_qa-auto-engineer-python-project-241&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=DenisZhutaev_qa-auto-engineer-python-project-241)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DenisZhutaev_qa-auto-engineer-python-project-241&metric=coverage)](https://sonarcloud.io/summary/new_code?id=DenisZhutaev_qa-auto-engineer-python-project-241)
 
 ## Gendiff
 
-Compares two configuration files and shows the difference.
+Сравнивает два конфигурационных файла и показывает разницу.
 
-### Usage
+### Использование
 
 ```bash
 gendiff first_file second_file
 ```
 
-### Example
+### Пример
 
 #### JSON
 
@@ -26,7 +26,7 @@ gendiff first_file second_file
 gendiff file1.json file2.json
 ```
 
-Output:
+Вывод:
 
 ```json
 {
@@ -45,7 +45,7 @@ Output:
 gendiff file1.yml file2.yml
 ```
 
-Output:
+Вывод:
 
 ```yaml
 {
@@ -58,13 +58,13 @@ Output:
 }
 ```
 
-#### Plain format
+#### Формат plain
 
 ```bash
 gendiff --format plain file1.json file2.json
 ```
 
-Output:
+Вывод:
 
 ```
 Property 'follow' was removed
@@ -73,13 +73,13 @@ Property 'timeout' was updated. From 50 to 20
 Property 'verbose' was added with value: True
 ```
 
-#### JSON format
+#### Формат JSON
 
 ```bash
 gendiff --format json file1.json file2.json
 ```
 
-Output:
+Вывод:
 
 ```json
 {
@@ -107,7 +107,7 @@ Output:
 }
 ```
 
-### As a library
+### Как библиотека
 
 ```python
 from gendiff import generate_diff
