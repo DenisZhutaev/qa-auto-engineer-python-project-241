@@ -28,9 +28,11 @@ def format_plain(diff_tree, parent_key=''):
                     f"with value: {_format_value(value.get('value'))}"
                 )
             elif status == 'changed':
+                old_val = _format_value(value.get('old_value'))
+                new_val = _format_value(value.get('new_value'))
                 lines.append(
                     f"Property '{full_key}' was updated. "
-                    f"From {_format_value(value.get('old_value'))} to {_format_value(value.get('new_value'))}"
+                    f"From {old_val} to {new_val}"
                 )
             elif status == 'unchanged':
                 pass  # Skip unchanged properties in plain format
