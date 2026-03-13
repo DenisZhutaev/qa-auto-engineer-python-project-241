@@ -12,6 +12,12 @@
 
 Сравнивает два конфигурационных файла и показывает разницу.
 
+### Демо
+
+[![asciicast](https://asciinema.org/a/PLACEHOLDER.svg)](https://asciinema.org/a/PLACEHOLDER)
+
+_Запись работы программы в формате stylish, plain и json_
+
 ### Использование
 
 ```bash
