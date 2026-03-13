@@ -14,7 +14,7 @@
 
 ### Демо
 
-[![asciicast](https://asciinema.org/a/PLACEHOLDER.svg)](https://asciinema.org/a/PLACEHOLDER)
+[![asciicast](https://asciinema.org/a/836437.svg)](https://asciinema.org/a/836437)
 
 _Запись работы программы в формате stylish, plain и json_
 
