@@ -1,7 +1,7 @@
-# gendiff.gendiff module
+# gendiff.scripts.core module
 
 from gendiff.formatters import format_diff
-from gendiff.parsers import parse_file
+from gendiff.scripts.parsers import parse_file
 
 
 def build_diff_tree(first_data, second_data):

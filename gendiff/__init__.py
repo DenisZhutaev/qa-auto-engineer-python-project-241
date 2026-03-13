@@ -1,4 +1,4 @@
 # Hexlet Code - gendiff package
-from gendiff.gendiff import generate_diff
+from gendiff.scripts.core import generate_diff
 
 __all__ = ['generate_diff']
